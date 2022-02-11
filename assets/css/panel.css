@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+/*font-family     : 'Poppins', sans-serif;*/
+
+* {
+    -webkit-user-select: none; 
+    -webkit-touch-callout: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
+
+body {
+    background     : #0b1727;
+    color          : #fff;
+    text-decoration: none;
+    margin         : 0;
+    padding        : 0;
+    font-family    : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top:0; left:0;
+    background     : #5865f2;
+}
+
+.menu {
+    display: block;
+    height: 40px;
+    width: 60px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #5865f2;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-right: 10px;
+    position: fixed;
+    top:0;right:0;
+    transition: .3s ease-out;
+    border-radius: 5px;
+}
+
+.menu:hover {
+    color:#fff;
+    background     : #4e59d1;
+}
+.menu:active {
+    background     : #282831;
+    border: 1px solid #5865f2;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.drop-content {
+    display         : none;
+    flex-direction: column;
+    position        : absolute;
+    background : #19191f;
+    overflow        : auto;
+    z-index         : 1;
+    top             : 51px;
+    width           : 250px;
+    left            : 0;
+    height: calc(100vh - 50px);
+    border-right: 1px solid #212129;
+}
+
+.drop-content a {
+    color          : #fff;
+    padding        : 10px 12px;
+    text-decoration: none;
+    display        : flex ;
+    transition: .6s ease-out;
+    border-left: 3px solid #19191f;
+    font-family     : 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.dropdown a:hover {
+    color: #e41339;
+    background: #282831;
+    border-left: 3px solid #e41339;
+}
+
+.dropdown a i {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+}
+
+.logout {
+    margin-top: auto;
+    color          : #fff;
+    padding        : 10px 12px;
+    text-decoration: none;
+    display        : flex ;
+    transition: .6s ease-out;
+    border: none;
+    border-left: 3px solid #19191f;
+    font-family     : 'Poppins', sans-serif;
+    text-align: center;
+    background: #19191f;
+}
+
+.logout i {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+}
+
+.logout:hover {
+    color: #e41339;
+    background: #282831;
+    border-left: 3px solid #e41339;
+}
+
+#active {
+    color: #e41339;
+    background: #282831;
+    border-left: 3px solid #e41339; 
+}
+
+
+.show {
+    display: flex;
+}
+
+.section {
+    height: auto;
+    width: 100%;
+    display: flex;
+}
+
+.stats-container {
+    margin-top: 7vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.stats-container .card-stats{
+    padding: 10px;
+    background: #121e2d;
+    border-radius: 10px;
+    height: 100px;
+    width: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card-stats h4 {
+    font-family     : 'Poppins', sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.card-stats h5 {
+    font-family     : 'Poppins', sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #e41339;
+}
+
+.card-stats p {
+    font-family     : 'Poppins', sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 25px;
+}
+.card-stats i {
+    margin-top: -15px;
+    margin-bottom: 0px;
+    font-size: 30px;
+    margin-left: auto;
+}
+
+
+.player-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.player .card-player{
+    padding: 10px;
+    background: #121e2d;
+    border-radius: 10px;
+    height:auto;
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width:100%;
+  }
+  
+  #customers td, #customers th {
+    padding: 8px;
+  }
+
+  #customers tr:nth-child(even){background: #293139;}
+  #customers{background: #627285;}
+
+  #customers th {
+    padding: 8px 16px 8px 16px;
+    text-align: left;
+    background-color: #e41339;
+    color: white;
+  }
+
+.playerth {
+    width: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.tbborder {
+    border-left: 1px solid #2c2c2c;
+    border-right: 1px solid #2c2c2c;
+}

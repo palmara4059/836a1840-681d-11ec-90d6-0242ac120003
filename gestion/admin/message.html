@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta data-n-head="ssr" charset="utf-8">
+    <title>Accueil | Hyderium</title>
+    <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
+    <meta data-n-head="ssr" data-hid="description" name="description"
+        content="Fondé votre faction, créez vos alliances et piller vos ennemis pour devenir la faction la plus redoutable du serveur.">
+    <link href="../.././assets/css/panel.css" rel="stylesheet" />
+    <link href="../.././assets/css/chat.css" rel="stylesheet" />
+    <script src="https://leonardosnt.github.io/mc-player-counter/dist/mc-player-counter.min.js"></script>
+    <script src="../../assets/js/discord-api.js"></script>
+    <link rel="icon" type="image/png" href="../../assets/img/512x512.png">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="dropdown">
+            <button class="menu" onclick="functionMenu()"><i class="fa-solid fa-bars"></i></button>
+            <div id="menuDrop" class="drop-content">
+                <a href="./panel.html"><i class="fa-solid fa-objects-column"></i> <span>Dashboard</span></a>
+                <a href="" id="active"><i class="fa-solid fa-message-lines"></i> <span>Messages</span></a>
+                <a href=""><i class="fa-solid fa-gear"></i> <span>Settings</span></a>
+                <button class="logout" onclick="logout()"><i
+                        class="fa-solid fa-arrow-right-from-bracket"></i><span>Logout</span></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="section chat">
+        <div class="container-chat">
+            <div class="chat-card">
+                <div id="chat">
+                    <div id="messages">
+                    </div>
+                </div>
+            </div>
+            <div class="chat-card chatCard">
+                <form id="send-message">
+                    <h2>Nouveau Post</h2>
+                    <div class="aide-text">
+                        Voici la mise en forme que vous devez utiliser pour rédiger un message correct.
+                        (bientôt plus de possibilité)
+                        <table id="customers">
+                            <tr>
+                                <th>Balises html</th>
+                                <th>Nom</th>
+                                <th>Fonctions</th>
+                            </tr>
+                            <tr>
+                                <td>‹br›</td>
+                                <td>Entrer</td>
+                                <td>Retour à la ligne</td>
+                            </tr>
+                            <tr>
+                                <td>‹a›‹/a›</td>
+                                <td>Lien</td>
+                                <td>Permet d'ajouter un lien</td>
+                            </tr>
+                            <tr>
+                                <td>‹u›‹/u›</td>
+                                <td>Souligner</td>
+                                <td>Permet de Souligner du texte</td>
+                            </tr>
+                            <tr>
+                                <td>‹b›‹/b›</td>
+                                <td>Gras</td>
+                                <td>Permet de mettre en gras du texte</td>
+                            </tr>
+                        </table>
+                    </div>
+                  <input id="username" type="text" placeholder="Pseudo" required/>
+                  <input id="chat-titre" type="text" placeholder="Titre du post" required/>
+                  <input id="chat-txt" type="text" placeholder="Messages" required/>
+                  <button id="chat-btn" type="submit"><i class="fa-solid fa-paper-plane"></i> Envoyer</button>
+                </form>      
+            </div>
+        </div>
+    </div>
+    <script>
+        function functionMenu() {
+            document.getElementById("menuDrop").classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }       
+    </script>
+
+    <script>
+        const countEla = document.getElementById('count');
+
+        updateVisitCount();
+
+        function updateVisitCount() {
+            fetch("https://api.countapi.xyz/hit/hyderium.myftp.org-v0/visits")
+                .then(res => res.json())
+                .then(res => {
+                    countEla.innerHTML = res.value;
+                })
+        }
+    </script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    <script src="../.././assets/js/script.js"></script>
+    <script src="../.././assets/js/welcome.js"></script>
+</body>
+
+</html>
