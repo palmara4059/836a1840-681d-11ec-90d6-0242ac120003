@@ -50,7 +50,7 @@
                     <span class="box-span"></span>
                     <div class="box-content">
                         <h3>En ligne</h3>
-                        <h4><span data-playercounter-ip="mc.hypixel.net" data-playercounter-format="{online}">0</span>
+                        <h4><span data-playercounter-ip="play.hyderium.eu" data-playercounter-format="{online}">0</span>
                         </h4>
                     </div>
                 </div>
@@ -124,7 +124,7 @@
                 </div>
                 <div class="tagBox">
                     <h3>Informations de contact</h3>
-                    <p>Vous pouvez nous contacter via l'email :<address>***********@gmail.com</address></p>
+                    <p>Vous pouvez nous contacter via l'email :<address>hyderium.off@gmail.com</address></p>
                 </div>
             </div>
         </div>
@@ -163,7 +163,7 @@
     updateVisitCount();
     
     function updateVisitCount() {
-        fetch("https://api.countapi.xyz/hit/hyderium.myftp.org-v0/visits")
+        fetch("https://api.countapi.xyz/hit/hyderium.myftp.org-v1/visits")
         .then(res => res.json())
         .then(res => {
             countEla.innerHTML = res.value;
