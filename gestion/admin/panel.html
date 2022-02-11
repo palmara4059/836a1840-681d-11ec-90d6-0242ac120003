@@ -32,7 +32,7 @@
             <div class="card-stats">
                 <h4>Joueurs en ligne</h4>
                 <h5>Minecraft</h5>
-                <p><span data-playercounter-ip="mc.hypixel.net" data-playercounter-format="{online}">0</span></p>
+                <p><span data-playercounter-ip="play.hyderium.eu" data-playercounter-format="{online}">0</span></p>
                 <i class="fal fa-users"></i>
             </div>
             <div class="card-stats">
@@ -124,7 +124,7 @@
         updateVisitCount();
 
         function updateVisitCount() {
-            fetch("https://api.countapi.xyz/hit/hyderium.myftp.org-v0/visits")
+            fetch("https://api.countapi.xyz/hit/hyderium.myftp.org-v1/visits")
                 .then(res => res.json())
                 .then(res => {
                     countEla.innerHTML = res.value;
