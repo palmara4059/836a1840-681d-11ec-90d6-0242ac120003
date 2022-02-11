@@ -20,17 +20,17 @@
         <div class="header">
             <nav class="navbar">
                 <img src="./assets/img/HyderLogoop.png">
-                <a href="">Accueil</a>
+                <a href="HTTPS://hyderium.myftp.org/">Accueil</a>
                 <a href="">Support</a>
-                <a href="">Connexion</a>
+                <a href="./login">Connexion</a>
             </nav>
             
             <div class="dropdown">
                 <button class="menu" onclick="functionMenu()"><i class="fal fa-bars"></i></button>
                 <div id="menuDrop" class="drop-content">
-                    <a href="">Accueil</a>
+                    <a href="https://hyderium.myftp.org/">Accueil</a>
                     <a href="">Support</a>
-                    <a href="">Connexion</a>
+                    <a href="./login">Connexion</a>
                 </div>
             </div>
         </div>
@@ -177,7 +177,7 @@
                 </div>
                 <div class="tagBox">
                     <h3>Liens rapides</h3>
-                    <a >Mentions-legales</a>
+                    <a href="./conditions">Mentions-legales</a>
                     <a >RG-Discord</a>
                     <a >RG-Minecraft</a>
                     <a href="./staff">Notre équipe</a>
@@ -198,7 +198,7 @@
 
         <div class="section footer">
             <div class="container">
-                <p class="claim-left">© Hyderium | 2021 <a href='./mentions-legales'>Mentions légales</a></p>
+                <p class="claim-left">© Hyderium | 2021 <a href='./conditions'>Mentions légales</a></p>
                 <p class="claim-right">Développé par <a>Syrnaxx</a>.</p>
             </div>
         </div>
@@ -230,7 +230,7 @@
     updateVisitCount();
     
     function updateVisitCount() {
-        fetch("https://api.countapi.xyz/hit/hyderium.myftp.org-v0/visits")
+        fetch("https://api.countapi.xyz/hit/hyderium.myftp.org-v1/visits")
         .then(res => res.json())
         .then(res => {
             countEla.innerHTML = res.value;
