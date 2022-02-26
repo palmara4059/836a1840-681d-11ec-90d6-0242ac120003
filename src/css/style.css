@@ -112,6 +112,8 @@ header .container a {
     font-family       : 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 13px;
+    color          : #fff;
+    text-decoration: none;
 }
 
 #aColor {
