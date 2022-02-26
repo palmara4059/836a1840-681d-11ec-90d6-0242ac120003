@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta data-n-head="ssr" charset="utf-8">
+    <title>Accueil | Hyderium</title>
+    <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
+    <meta data-n-head="ssr" data-hid="description" name="description"
+        content="Fondé votre faction, créez vos alliances et piller vos ennemis pour devenir la faction la plus redoutable du serveur.">
+    <link href="./src/css/login.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="./src/img/512x512.png">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css">
+</head>
+
+<body>
+    <div class="authen">
+        <div class="auth">
+            <div class="content">
+                <h5>Inscription</h5>
+                <img src="./src/img/512x512.png" alt="">
+            </div>
+            <div class="container">
+                <form onsubmit="signUp()" id="loginForm" class="login-form">
+                    <input id="email" type="text" class="input" required placeholder="Adresse email"/>
+                    <input id="password" type="password" class="input" required placeholder="Mot de passe"/>
+                    <div class="btn-flex">
+                        <button class="loginBtn" type="submit" >Inscription</button>
+                        <p>J'ai déjà un <a href="./login.html">compte</a></p>
+                    </div>
+                  </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+
+    <script src="./src/js/firebase.js"></script>
+    <script src="./src/js/register.js"></script>
+</body> 
+
+</html>

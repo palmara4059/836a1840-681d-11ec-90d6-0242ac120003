@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+    <head>
+        <meta data-n-head="ssr" charset="utf-8">
+        <title>Hyderium | Dashboard Profil</title>
+        <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta data-n-head="ssr" data-hid="description" name="description"
+        content="Fondé votre faction, créez vos alliances et piller vos ennemis pour devenir la faction la plus redoutable du serveur.">
+        <link href="../css/profil.css" rel="stylesheet" />
+        <link rel="icon" type="image/png" href="../.././src/img/512x512.png">
+        <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <span id="userName">Hyderium <img src="../.././src/img/512x512.png" alt=""></span>
+        </div>
+    </header>
+    <div class="dropdown">
+        <button class="btnSidebar" onclick="functionMenuSidebar()"><i class="fal fa-bars"></i></button>
+        <div id="menuDropSidebar" class="drop-content">
+            <div class="sidebar">
+
+                <div class="container">
+                    <div class="content">
+                        <button class="activeBtn"><i class="fa-solid fa-gear"></i></button>
+                        <button onclick="logout()"><i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section profilCard">
+        <div class="profilC-container">
+            <div class="cardProfil">
+                <div class="cardHeader">
+                    <img src="../.././src/img/512x512.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="pseudo"><span id="Pseudo"></span><span id="hastag">#<span id="Tag">0000</span></span><div class="badge"></div></div>
+                    <h2>Paramètres du compte</h2>
+                    <div class="inputType inputPseudo"><span id="nameUser"></span></div>
+                    <div class="inputType inputEmail"><span id="userMail"></span></div>
+                    <div class="inputType inputId"><span id="userId"></span></div>
+                    <div id="paraConfig">
+                        <button>Modifier</button>
+                        <button class="desa">Désactiver</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function functionMenuSidebar() {
+            document.getElementById("menuDropSidebar").classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }        
+    </script>
+
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+
+<script src="../.././src/js/firebase.js"></script>
+<script src="../.././src/js/welcome.js"></script>
+</body>
+
+</html>

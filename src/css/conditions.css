@@ -1,0 +1,51 @@
+.bannerIco2{
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.conditions {
+    background:#0f0f0f;
+}
+
+.conditions .container-box {
+    width: 100%;
+    display: flex;
+}
+
+.conditions .container-box .boxConditions{
+    padding: 8px 10px 8px 10px;
+    background: #0f0f0f;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.boxConditions h3 {
+    font-size: 18px;
+    color:#e41339;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.boxConditions p {
+    font-size: 18px;
+    color:#646464;
+}
+.boxConditions b {
+    font-size: 15px;
+    color:#ffffff;
+}
+
+.boxConditions a {
+    font-size: 15px;
+    color:#e41339;
+    text-decoration: none;
+}
+
+.boxConditions a:hover {
+    text-decoration: underline;
+}

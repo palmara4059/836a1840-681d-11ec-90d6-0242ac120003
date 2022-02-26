@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+/*font-family     : 'Montserrat', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Mulish&display=swap');
+/*font-family     : 'Dosis', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Cuprum&display=swap');
+/*font-family     : 'Cuprum', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Cuprum&family=El+Messiri&display=swap');
+/*font-family     : 'Cuprum', sans-serif;
+font-family       : 'El Messiri', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&family=Zen+Kurenaido&display=swap');
+/*font-family     : 'PT Sans Narrow', sans-serif;
+font-family       : 'Zen Kurenaido', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap');
+/*font-family     : 'Shippori Antique', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+/*font-family     : 'Poppins', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Barlow:ital,wght@0,100;1,100&family=Montserrat+Alternates:wght@100&family=Montserrat:wght@200&family=Poppins:wght@700&display=swap');
+/*font-family     : 'Acme', sans-serif;
+font-family       : 'Barlow', sans-serif;
+font-family       : 'Montserrat', sans-serif;
+font-family       : 'Montserrat Alternates', sans-serif;
+font-family       : 'Poppins', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap');
+/*font-family     : 'Exo 2', sans-serif;*/
+
+
+* {
+    -webkit-user-select  : none;
+    -webkit-touch-callout: none;
+    -moz-user-select     : none;
+    -ms-user-select      : none;
+    user-select          : none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background     : #111;
+    color          : #fff;
+    text-decoration: none;
+    margin         : 0;
+    padding        : 0;
+    font-family    : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 4px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #000000aa;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #e41339;
+}
+
+/*------------------------------------ Header ------------------------------------*/
+
+header {
+    display: block;
+    height: 90px;
+    width: 100%;
+    background: #2c2c2e;
+    position: fixed;
+    top:0;
+    left:0;
+    border-bottom: 1px solid #5c5c5c;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 90px;
+}
+
+header .container #userName {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 15px;
+    border: none;
+    background: #3a3a3c;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 12px;
+    height: 35px;
+    font-family       : 'Montserrat', sans-serif;
+    line-height: 35px;
+    display: flex;
+    flex-direction: row;
+}
+
+header .container #userName img {
+    height: 30px;
+    width: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    margin-right: 2px;
+}
+
+/*------------------------------------ Header ------------------------------------*/
+
+/*------------------------------------ Page ------------------------------------*/
+
+.section {
+    height : auto;
+    width  : 100%;
+    display: flex;
+}
+
+.inputType {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #333335;
+    color: #858585;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+
+#paraConfig {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#paraConfig button {
+    padding: 15px 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: none;
+    background: #6464ff;
+    color: #fff;
+    font-size: 18px;
+    line-height: 8px;
+    transition: .6s ease-out;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#paraConfig button:hover {
+    background: #4e4ec4;
+}
+
+
+#paraConfig .desa {
+    background:#fff;
+    color: #e41339;
+}
+#paraConfig .desa:hover {
+    background:#a5a5a5;
+    color: #e41339;
+}
+
+/*------------------------------------ Page ------------------------------------*/
+
+/*------------------------------------ProfilCard ------------------------------------*/
+
+.profilCard {
+    background: #1d1d1d;
+    width: 380px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.profilCard .cardHeader {
+    display: flex;
+    background: url("../.././src/img/accueil.png");
+    width: 380px;
+    height: 160px;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.profilCard .cardHeader img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: 5px solid #1d1d1d;
+    margin-top: 120px;
+    margin-left: 180px;
+}
+
+
+.cardProfil .content {
+    padding: 4px 12px;
+}
+
+.content .pseudo {
+    display: flex;
+    width: 100%;
+    padding: 2px;
+    border-radius: 5px;
+    font-family       : 'Montserrat', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content .pseudo #hastag {
+    margin-left: 2px;
+    margin-right: 2px;
+    background: #23272A;
+    padding: 2px;
+    border-radius: 5px;
+    border-bottom: 0;
+    color: #6343e4;
+}
+
+.content .pseudo .badge {
+    font-size: 15px;
+    margin-left: auto;
+}
+
+.content .pseudo .badge i {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.content .pseudo .badge i #Tool {
+    display: none;
+    text-transform: capitalize;
+    font-weight: 100;
+    font-size: 13px;
+    font-family     : 'Montserrat', sans-serif;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -35px;
+    color: #fff;
+    background: #111;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #fff;
+}
+
+.content .pseudo .badge i:hover #Tool {
+    display: block;
+}
+
+#bluePurple {
+    color: #5865f2;
+}
+
+#greenCheck {
+    color: #3ba55d;
+}
+
+
+/*------------------------------------ProfilCard ------------------------------------*/
+
+/*------------------------------------ MenuDropSidebar ------------------------------------*/
+
+.btnSidebar {
+    position: fixed;
+    top:0;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 15px;
+    border: none;
+    background: #3a3a3c;
+    color: #fff;
+    font-size: 18px;
+    line-height: 8px;
+    transition: .6s ease-out;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.drop-content {
+    display         : none;
+}
+
+.show {
+    display: block;
+}
+
+/*------------------------------------ Sidebar ------------------------------------*/
+
+.sidebar {
+    display: block;
+    height: 100Vh;
+    width: 90px;
+    background: #2c2c2e;
+    position: fixed;
+    top:0;
+    left:0;
+    border-right: 1px solid #5c5c5c;
+}
+
+.sidebar .container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.sidebar .container .content {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 60px;
+    min-height: 100px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background: #3a3a3c;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.sidebar .container .content button {
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 15px;
+    border: none;
+    background: #3a3a3c;
+    color: #fff;
+    font-size: 18px;
+    line-height: 8px;
+    transition: .6s ease-out;
+}
+.sidebar .container .content button:hover, .sidebar .container .content .activeBtn {
+    background: #636366;
+    color: #13a2e4;
+}
+
+.menuSidebar {
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 15px;
+    border: none;
+    background: #3a3a3c;
+    color: #fff;
+    font-size: 18px;
+    line-height: 8px;
+    transition: .6s ease-out;
+    position: fixed;
+    top:0;
+    left:0;
+}
+/*------------------------------------ Sidebar ------------------------------------*/
+
+/*------------------------------------ MenuDropSidebar ------------------------------------*/

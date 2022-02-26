@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+/*font-family     : 'Montserrat', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Mulish&display=swap');
+/*font-family     : 'Dosis', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Cuprum&display=swap');
+/*font-family     : 'Cuprum', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Cuprum&family=El+Messiri&display=swap');
+/*font-family     : 'Cuprum', sans-serif;
+font-family       : 'El Messiri', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&family=Zen+Kurenaido&display=swap');
+/*font-family     : 'PT Sans Narrow', sans-serif;
+font-family       : 'Zen Kurenaido', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap');
+/*font-family     : 'Shippori Antique', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+/*font-family     : 'Poppins', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Barlow:ital,wght@0,100;1,100&family=Montserrat+Alternates:wght@100&family=Montserrat:wght@200&family=Poppins:wght@700&display=swap');
+/*font-family     : 'Acme', sans-serif;
+font-family       : 'Barlow', sans-serif;
+font-family       : 'Montserrat', sans-serif;
+font-family       : 'Montserrat Alternates', sans-serif;
+font-family       : 'Poppins', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap');
+/*font-family     : 'Exo 2', sans-serif;*/
+
+
+* {
+    -webkit-user-select  : none;
+    -webkit-touch-callout: none;
+    -moz-user-select     : none;
+    -ms-user-select      : none;
+    user-select          : none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 4px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #000000aa;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #e41339;
+}
+
+.gotop {
+    border       : none;
+    border-radius: 5px;
+    position     : fixed;
+    width        : 38px;
+    height       : 38px;
+    background   : #e41339;
+    bottom       : 20px;
+    right        : 20px;
+    text-align   : center;
+    line-height  : 40px;
+    color        : #fff;
+    transition: .5s ease-out;
+}
+
+.gotop:hover {
+    background: #7e0c21;
+}
+
+
+body {
+    background     : #111;
+    color          : #fff;
+    text-decoration: none;
+    margin         : 0;
+    padding        : 0;
+    font-family    : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.section {
+    height : auto;
+    width  : 100%;
+    display: flex;
+}
+
+/*------------------------------------ Header ------------------------------------*/
+
+header {
+    width: 100%;
+    height: 50px;
+    background: #111;
+    border-bottom: 1px solid #222222;
+    position: fixed;
+    top:0;
+    left:0;
+}
+header .container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: right;
+}
+
+header .container a {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 8px 25px;
+    margin-top: 9px;
+    font-family       : 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#aColor {
+    color: #e41339;
+    font-family       : 'Montserrat', sans-serif;
+}
+
+#aBtn {
+    background: #e41339;
+    border-radius: 5px;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #111;
+    width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 0px;
+    border: 1px solid #222222;
+  }
+  
+  .dropdown-content a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+  }
+  .dropdown-content a:hover {
+    color: #e41339;
+  }
+  
+  .dropdown-content a:hover {
+      background-color: #131313;
+}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+/*------------------------------------ Header ------------------------------------*/
+
+/*------------------------------------ Join ------------------------------------*/
+
+.servIp {
+    background: #171717;
+    border-top: 1px solid #293139;
+    border-bottom: 1px solid #293139;
+}
+
+.servIp .box-container {
+    width: 100%;
+    display: flex;
+}
+
+.servIp .box-container p {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 18px 8px 18px;
+    border-radius: 5px;
+    background: #0f0f0f;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 15px;
+    font-family       : 'Montserrat', sans-serif;
+}
+
+.servIp .box-container p span {
+    color: #e41339;
+}
+
+/*------------------------------------ Accueil ------------------------------------*/
+
+.accueil .container {
+    width: 100%;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.accueil .container .accBox {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.accueil .container .boxAcc {
+    margin-left: auto;
+    margin-right: auto;
+    background: #111;
+    padding: 8px 18px 8px 18px;
+    border-radius: 5px;
+    border: 1px solid #222222;
+}
+
+.accueil .container h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+
+}
+.accueil .container p {
+    margin-top: -15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.accueil .boxAcc p a {
+    color: #e41339;
+    text-decoration: none;
+}
+
+address {
+    margin-top : -15px;
+    color      : #e41339;
+    user-select: text;
+}
+
+/*------------------------------------ Accueil ------------------------------------*/
+
+/*------------------------------------ Join ------------------------------------*/
+
+/*------------------------------------ Background ------------------------------------*/
+
+.wiki {
+    background: url("../img/accueil.png");
+    height: 100vh;  
+    width: 100%;
+    box-shadow: #111111 0px -50px 36px -28px inset;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.accueil {
+    background: url("../img/accueil.png");
+    height: 100vh;  
+    width: 100%;
+    box-shadow: #111111 0px -50px 36px -28px inset;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*------------------------------------ Background ------------------------------------*/
+
+/*------------------------------------ Info ------------------------------------*/
+
+.info {
+    background: #0f0f0f;
+}
+
+.info .info-container {
+    width          : 100%;
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: space-evenly;
+}
+
+.info .info-container .infoBox {
+    width         : auto;
+    height        : auto;
+    display       : block;
+    flex-direction: column;
+    margin-top    : 10px;
+    margin-bottom : 10px;
+    text-align    : center;
+}
+
+.info .info-container .infoBox h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.info .info-container .infoBox p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+/*------------------------------------ Info ------------------------------------*/
+
+/*------------------------------------ Community ------------------------------------*/
+
+.commu {
+    background: #171717;
+}
+
+.commu .commu-container {
+    width          : 100%;
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: space-evenly;
+}
+
+.commu .commu-container .commuBox {
+    width         : auto;
+    display       : flex;
+    flex-direction: column;
+    margin-top    : 10px;
+    margin-bottom : 10px;
+    text-align    : center;
+}
+
+.commu .commu-container .commuBox .containerBoxIf {
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+    flex-wrap      : wrap;
+    width          : 51%;
+    margin-left    : auto;
+    margin-right   : auto;
+    align-items    : center;
+}
+
+.commu .commu-container .commuBox .containerBoxIf iframe {
+    margin-top   : 10px;
+    margin-bottom: 10px;
+    margin-left  : 10px;
+    margin-right : 10px;
+    border-radius: 5px;
+    border       : 2px solid transparent;
+    transition   : .5s ease-out;
+}
+
+.commu .commu-container .commuBox .containerBoxIf iframe:hover {
+    margin-top   : 10px;
+    margin-bottom: 10px;
+    margin-left  : 10px;
+    margin-right : 10px;
+    border       : 2px solid #e41339;
+}
+
+.commu .commu-container .commuBox h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.commu .commu-container .commuBox p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.commu .commu-container .commuBox a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color      : #e41339;
+}
+
+.commu .commu-container .commuBox a:hover {
+    text-decoration: underline;
+}
+
+/*------------------------------------ Community ------------------------------------*/
+
+/*------------------------------------ Tag ------------------------------------*/
+
+.tag {
+    background: #0f0f0f;
+}
+
+.tag .box-container {
+    margin-left    : auto;
+    margin-right   : auto;
+    width          : 80%;
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: space-around;
+}
+
+.tag .box-container .tagBox {
+    width         : 300px;
+    height        : auto;
+    padding       : 8px 8px;
+    background    : transparent;
+    display       : flex;
+    flex-direction: column;
+    margin-top    : 10px;
+    margin-bottom : 10px;
+}
+
+.tag .box-container .tagBox h3 {
+    font-size            : 15px;
+    color                : #fff;
+    text-decoration      : underline;
+    text-underline-offset: 10px;
+}
+
+.tag .box-container .tagBox p {
+    margin-top: 5px;
+    font-size : 14px;
+    color     : #fff;
+}
+
+.tag .box-container .tagBox a {
+    margin-top     : 5px;
+    font-size      : 14px;
+    color          : #fff;
+    text-decoration: none;
+    transition     : .3s ease-out;
+}
+
+.tag .box-container .tagBox a:hover {
+    color          : #e41339;
+    text-decoration: underline;
+}
+
+.tag .box-container .tagBox address {
+    margin-top : -10px;
+    color      : #e41339;
+    user-select: text;
+}
+
+
+/*------------------------------------ Tag ------------------------------------*/
+
+
+/*------------------------------------ Footer ------------------------------------*/
+
+.footer {
+    height    : 60px;
+    background: #0f0f0f;
+}
+
+.footer .container {
+    display        : flex;
+    flex-direction : row;
+    flex-wrap      : wrap;
+    justify-content: space-between;
+    width          : 60%;
+    margin-left    : auto;
+    margin-right   : auto;
+}
+
+.footer .container p {
+    font-size    : 13px;
+    font-weight  : 600;
+    font-family  : 'Montserrat', sans-serif;
+    color        : #aaaaaa;
+    margin-top   : auto;
+    margin-bottom: auto;
+}
+
+.footer .container p a {
+    color: #dd163b;
+}
+
+/*------------------------------------ Footer ------------------------------------*/
+
+
+@media screen and (max-width: 1280px) {
+    .footer .container p {
+        margin-left : auto;
+        margin-right: auto;
+    }
+
+    .accueil .container .accBox {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+/*-- Code page --*/
+.dropdown {
+    display: inline-block;
+}
+
+.drop-content {
+    display         : none;
+    position        : absolute;
+    background : #0f0f0f;
+    min-width       : 160px;
+    overflow        : auto;
+    z-index         : 1;
+    top             : 51px;
+    width           : 100%;
+    left            : 0;
+}
+
+.drop-content a {
+    color          : #fff;
+    padding        : 10px 12px;
+    text-decoration: none;
+    display        : block;
+    text-align     : center;
+    transition: .6s ease-out;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.dropdown a:hover {
+    color: #e41339;
+    background: #222222;
+}
+
+.show {
+    display: block;
+}
+
+.menu {
+    display: none;
+    height: 40px;
+    width: 60px;
+    background: transparent;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    position: fixed;
+    top:5px;
+    right: 5px;
+}
+
+.menu:hover {
+    color:#e41339;
+    background: #0f0f0f;
+    border: 1px solid #e41339;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 900px) {
+    header .container {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+}
