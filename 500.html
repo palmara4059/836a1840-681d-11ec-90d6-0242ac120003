@@ -26,6 +26,18 @@
             </div>
         </div>
     </div>
+            </script>
+    <script>
+    const countEla = document.getElementById('count');
+    updateVisitCount();
+    function updateVisitCount() {
+        fetch("https://api.countapi.xyz/hit/hyderium.myftp.org-v1-2/visits")
+        .then(res => res.json())
+        .then(res => {
+            countEla.innerHTML = res.value;
+        })
+    }
+    </script>
 </body>
 
 </html>
