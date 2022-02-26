@@ -94,6 +94,7 @@ header {
     position: fixed;
     top:0;
     left:0;
+    text-decoration: none;
 }
 header .container {
     width: 80%;
@@ -112,18 +113,21 @@ header .container a {
     font-family       : 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 13px;
-    color          : #fff;
     text-decoration: none;
+    color: #fff;
 }
 
 #aColor {
     color: #e41339;
     font-family       : 'Montserrat', sans-serif;
+    text-decoration: none;
 }
 
 #aBtn {
     background: #e41339;
     border-radius: 5px;
+    text-decoration: none;
+    color:#fff;
 }
 
 li a, .dropbtn {
